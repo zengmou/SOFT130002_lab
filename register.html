@@ -18,11 +18,11 @@
                 </p>
                 <p>
                     请设置密码<br>
-                    <input type="password" name="password" pattern="^[A-Za-z0-9]+$">
+                    <input type="password" name="password" pattern="^[a-Za-z0-9]{8，}$">
                 </p>
                 <p>
                     请确认密码<br>
-                    <input type="password" name="repassword" pattern="^[A-Za-z0-9]+$">
+                    <input type="password" name="repassword" pattern="^[a-Za-z0-9]{8，}$">
                 </p>
                 <p>
                     您的居住地<br>
@@ -108,6 +108,7 @@
                 </textarea>  
                 <br>
                 <input type="radio" value="agree" name="agree">同意
+                <input type="radio" value="disagree" name="agree">不同意
                 <p>
                     <input type="submit" value="注册" name="register">
                 </p>
