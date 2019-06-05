@@ -36,7 +36,7 @@ window.onload = function(){
     var figcaption = document.getElementsByTagName("figcaption")[0];
     clearInterval(timerOut)
     timerIn = setInterval(function () {
-    var doubleOp = figcaption.style.opacity*100;""
+    var doubleOp = figcaption.style.opacity*100;
     doubleOp += 2;
     figcaption.style.opacity = String(doubleOp/100);
     //因为直接使用+=会在字符串之后直接加0.2，所以通过*10来转换类型
