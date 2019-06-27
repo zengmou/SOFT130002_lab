@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="..\css\register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            Art Store<span>lalala</span>
+        </nav>
+        <div class="nav_a">
+            <a  href="./index.html">主页</a>
+        </div>
+    </header>
+    <h1>注册</h1>
+    <section>
+        <form action="index2.html" method="Get">
+            <div>
+                您的用户名:
+                <input class="input" type=“text” id="nickname"  placeholder="用户名" required>
+                <span id="nickname_reminder"></span>
+            </div>
+            <div>
+                请设置密码:
+                <input class="input" type="password" id="password" placeholder="密码" required>
+                <p1 id="password_reminder"></p1>
+            </div>
+            <div>
+                请确认密码:
+                <input class="input" type="password" id="repassword"  placeholder="确认密码" required>
+                <p1 id="repassword_reminder"></p1>
+            </div>           
+            <div>
+                您的邮箱号:
+                <input class="input" type="email" id="email"  placeholder="邮箱" required>
+                <p1 id="email_reminder"></p1>
+            </div>
+            <div onclick="registering()">
+                <input class="submit" type="submit" value="提交" name="register">
+            </div>
+        </form>
+    </section>
+    <script src="..\js\register.js"></script>
+</body>
+
+</html>

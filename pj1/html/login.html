@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="..\css\login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            Art Store<span>lalala</span>
+        </nav>
+        <div class="nav_a">
+            <a  href="./index.html">主页</a>
+        </div>
+    </header>
+    <h1>登录</h1>
+    <section>
+        <form action="index2.html" method="Get">
+            <div>
+                账号:
+                <input class="input" type=“text” id="nickname" pattern="^[a-zA-Z0-9_]+$" placeholder="账号" required>
+                <p1 id="nickname_description"></p1>
+            </div>
+            <div>
+                密码:
+                <input class="input" type="password" id="password" pattern="^[A-Za-z0-9]{8,}$" placeholder="密码" required>
+                <p1 id="password_description"></p1>
+            
+            <div onclick="loging()">
+               <input class="submit" type="submit" value="登录" name="login">
+            </div>
+        </form>
+    </section>
+    <script src="..\js\login.js"></script>
+</body>
+</html>
